@@ -62,5 +62,6 @@ class Student
     SQL
 
     DB[:conn].execute(sql, grade).map do |row|
+    end 
   end 
 end
