@@ -77,14 +77,14 @@ class Student
     end 
   end 
   
-  def self.all(row)
+  def self.all
     sql = <<-SQL
       SELECT *
       FROM students 
     SQL
  
     DB[:conn].execute(sql)
-			self.new_from_db(row)
+			self.new_from_db
 		end 
 	end 
   
