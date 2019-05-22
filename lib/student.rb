@@ -10,6 +10,10 @@ class Student
   end
 
   def self.all(row)
+    
+    
+    
+    
     sql = <<-SQL
       SELECT *
       FROM students 
