@@ -77,6 +77,15 @@ class Student
     end 
   end 
   
-  
+  def self.all
+    sql = <<-SQL
+      SELECT *
+      FROM songs
+    SQL
+ 
+    DB[:conn].execute(sql)
+			self.new_from_db(row)
+		end 
+	end 
   
 end
